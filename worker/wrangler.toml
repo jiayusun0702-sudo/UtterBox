@@ -1,0 +1,7 @@
+name = "utterbox-tts-worker"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+AZURE_SPEECH_REGION = "eastus"
+ALLOWED_ORIGIN = "*"

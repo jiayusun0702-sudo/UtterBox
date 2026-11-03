@@ -1,0 +1,13 @@
+{
+  "name": "utterbox-tts-worker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "secret:azure-key": "wrangler secret put AZURE_SPEECH_KEY"
+  },
+  "devDependencies": {
+    "wrangler": "^4.152.0"
+  }
+}
