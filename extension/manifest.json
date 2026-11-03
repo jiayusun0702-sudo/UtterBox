@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "UtterBox - 文字转语音",
+  "version": "1.0.0",
+  "description": "选中网页文本，右键或点击插件图标，一键转换为 MP3 语音并下载。",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["contextMenus", "downloads", "storage", "activeTab", "scripting"],
+  "host_permissions": ["https://utterbox-tts-worker.sunj0061ntu.workers.dev/*"]
+}
