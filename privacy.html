@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UtterBox 隐私政策 / Privacy Policy</title>
+<style>
+  body { font: 16px/1.7 -apple-system, "Segoe UI", sans-serif; color: #1e293b; max-width: 760px; margin: 40px auto; padding: 0 20px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 18px; margin-top: 32px; }
+  code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; }
+  hr { margin: 40px 0; border: none; border-top: 1px solid #e2e8f0; }
+  footer { color: #64748b; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<h1>UtterBox 隐私政策</h1>
+<p>最后更新：2026-11-16</p>
+
+<p>UtterBox（"本扩展/本网站"）是一个文字转语音（TTS）工具。我们非常重视你的隐私，本政策说明我们如何处理数据。</p>
+
+<h2>我们收集什么</h2>
+<p>我们不收集、不存储任何个人身份信息。具体来说：</p>
+<ul>
+  <li>你输入或选中的文本，会通过我们的 Cloudflare Worker 代理发送给 <strong>Microsoft Azure Cognitive Services（语音服务）</strong>，仅用于实时生成语音音频，不会被我们的服务器记录或留存。</li>
+  <li>生成的音频文件直接返回给你的浏览器用于试听或下载，不经过任何第三方存储。</li>
+  <li>扩展中的语音/语速/下载偏好设置，仅保存在你浏览器本地的扩展存储（<code>chrome.storage.local</code>）中，不会上传到任何服务器。</li>
+  <li>我们不使用任何分析、广告或追踪工具，不设置除浏览器本地存储外的任何 Cookie。</li>
+</ul>
+
+<h2>第三方服务</h2>
+<p>文本会被发送至 Microsoft Azure 的语音合成接口以生成音频，适用 <a href="https://privacy.microsoft.com/zh-cn/privacystatement" target="_blank" rel="noopener">Microsoft 隐私声明</a>。除此之外，我们不与任何第三方共享你的数据。</p>
+
+<h2>权限说明（浏览器扩展）</h2>
+<ul>
+  <li><code>contextMenus</code>：在右键菜单中添加"转为语音并下载"选项。</li>
+  <li><code>activeTab</code> / <code>scripting</code>：读取你在当前页面选中的文本。</li>
+  <li><code>downloads</code>：将生成的 MP3 文件保存到你的电脑。</li>
+  <li><code>storage</code>：保存你的语音/语速偏好设置。</li>
+</ul>
+
+<h2>联系方式</h2>
+<p>如有疑问，请通过 <a href="https://github.com/jiayusun0702-sudo/UtterBox/issues" target="_blank" rel="noopener">GitHub Issues</a> 联系我们。</p>
+
+<hr />
+
+<h1>Privacy Policy (English)</h1>
+<p>Last updated: 2026-11-16</p>
+<p>UtterBox is a text-to-speech (TTS) tool. We do not collect or store any personally identifiable information.</p>
+<ul>
+  <li>Text you enter or select is sent through our Cloudflare Worker proxy to Microsoft Azure Cognitive Services (Speech) solely to synthesize audio in real time; it is not logged or retained by our server.</li>
+  <li>Generated audio is returned directly to your browser for preview/download and is never stored by any third party on our end.</li>
+  <li>Your voice/rate/download preferences are stored only in your browser's local extension storage (<code>chrome.storage.local</code>) and never uploaded.</li>
+  <li>We use no analytics, advertising, or tracking tools, and set no cookies beyond local browser storage.</li>
+</ul>
+<p>Text is sent to Microsoft Azure's speech synthesis API to generate audio, subject to the <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a>. We do not share your data with any other third party.</p>
+<p>Questions? Open an issue on <a href="https://github.com/jiayusun0702-sudo/UtterBox/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+
+<footer>
+  <hr />
+  <p><a href="./index.html">&larr; 返回 UtterBox</a></p>
+</footer>
+
+</body>
+</html>

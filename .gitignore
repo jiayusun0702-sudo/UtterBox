@@ -3,3 +3,4 @@ node_modules/
 .dev.vars
 *.mp3
 .DS_Store
+dist/
